@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #5a606b;
+            font-family: "Lato", sans-serif;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding-top: 110px;
+        }
+
+        .container::after {
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #552e7d;
+            content: "";
+        }
+
+        .container::before {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            right: 0;
+            background: #eeeeef;
+            content: "";
+        }
+
+        .container .main {
+            background: #fefffe;
+            z-index: 1;
+            border-radius: 3px;
+            padding: 2em;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .container .main .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            color: #b9babd;
+        }
+
+        .container .main .logo h2 {
+            color: #b9babd;
+            font-size: 30px;
+            margin-left: 5px;
+        }
+
+        .container .main .welcome {
+            margin-bottom: 6px;
+        }
+
+        .container .main .title {
+            font-size: 18px;
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
+
+        .container .main .pre {
+            font-size: 13px;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .container .main .p_text {
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+
+        .container .main .p_text .email {
+            font-size: 11px;
+            font-weight: 600;
+            color: #309aec;
+            margin-left: 2px;
+            font-weight: 700;
+        }
+
+        .container .main button {
+            font-size: 13px;
+            font-weight: 500;
+            padding: 10px 20px;
+            background: #3e89cc;
+            color: white;
+            border-radius: 3px;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+
+        .container .main hr {
+            background: #f1f1f1;
+            height: 1px;
+            width: 325px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .container .main .help {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .container .alert_text {
+            font-size: 9px;
+            font-weight: 500;
+            line-height: 12px;
+            z-index: 1;
+        }
+
+        .container .media {
+            background: transparent;
+            z-index: 1;
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .container .media a {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid silver;
+        }
+
+        .container .media a .icons {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: transparent;
+            z-index: 1;
+        }
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram {
+            color: #572e83;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img src="icon_img.png" alt="" width="27px" height="27px">
+                <h2>Logo</h2>
+            </div>
+
+            <p class="welcome">¡Bienvenido Salvador!</p>
+            <p class="title">PCP PIT Customer Portal</p>
+            <pre class="pre">Nos encanta tenerte aquí</pre>
+
+            <p class="p_text">Consulta tu estado y detalle de tus servicios facturados</p>
+            <p class="p_text">fácilmente desde nuestro sistema web, pero primero,</p>
+            <p class="p_text">introduce tu contraseña para completar el registro.</p>
+
+            <button>Configurar contraseña</button>
+
+            <hr>
+
+            <a href="" class="help">¿Necesitas ayuda?</a>
+
+            <pre class="p_text">Comunicarse a travéz de las siguientes vías:</pre>
+            <pre class="p_text">Centro de Llamadas: +51 947145352</pre>
+            <pre class="p_text">Correo electrónico: <a href="" class="email">contacto@pit.net</a></pre>
+
+
+        </div>
+
+        <p class="alert_text">El presente correo es enviado automáticamente por nuestro sistema,</p>
+        <p class="alert_text">por favor, no responda ni reenvíe mensajes a esta dirección.</p>
+
+        <div class="media">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true" class="icons"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true" class="icons"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true" class="icons"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
